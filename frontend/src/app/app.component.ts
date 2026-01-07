@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.http
-      .get('http://localhost:3001/api/battery')
+      .get('/api/battery')
       .subscribe(data => this.battery = data);
   }
 }
